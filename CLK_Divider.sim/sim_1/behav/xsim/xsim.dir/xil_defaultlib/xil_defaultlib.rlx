@@ -1,0 +1,19 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sim_1/new/main_tb.vhd,1715907730,vhdl,,,,main_tb,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/imports/ENEL373/finite_state_machine.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,finite_state_machine,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/bcd_to_7seg.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,bcd_to_7seg,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/circ_buffer.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,circ_buffer,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/clock_divider.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,clock_divider,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/convertMessagetoTime.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,convertmessagetotime,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,converttimetomessage,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/decoder.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,decoder,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/display_selec.vhd,1715908407,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,display_selector,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/findAverage.vhd,1715908408,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,findaverage,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd,1715908408,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,findmax,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd,1715908408,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,findmin,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,1715908408,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sim_1/new/main_tb.vhd,,,main,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/mux.vhd,1715907733,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,mux,,,,,,,,
+P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/timer_counter.vhd,1715908408,vhdl,P:/Desktop/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd,,,timer_counter,,,,,,,,

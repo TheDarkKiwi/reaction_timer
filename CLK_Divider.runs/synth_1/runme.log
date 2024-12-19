@@ -1,0 +1,320 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental H:/FriGroup13/CLK_Divider.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from H:/FriGroup13/CLK_Divider.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11404
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1243.691 ; gain = 409.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [P:/Profile/ENEL373/clock_divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (0#1) [P:/Profile/ENEL373/clock_divider.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'display_selector' [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/display_selec.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_selector' (0#1) [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/display_selec.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'decoder' [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/decoder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (0#1) [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/decoder.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'bcd_to_7seg' [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/bcd_to_7seg.vhd:13]
+WARNING: [Synth 8-614] signal 'Display_Sel' is read in the process but is not in the sensitivity list [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/bcd_to_7seg.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_7seg' (0#1) [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/bcd_to_7seg.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'timer_counter' [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/timer_counter.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'timer_counter' (0#1) [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/timer_counter.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'mux' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/mux.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/mux.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'finite_state_machine' [H:/FriGroup13/CLK_Divider.srcs/sources_1/imports/ENEL373/finite_state_machine.vhd:19]
+WARNING: [Synth 8-614] signal 'previous_state' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/imports/ENEL373/finite_state_machine.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'finite_state_machine' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/imports/ENEL373/finite_state_machine.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'circ_buffer' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/circ_buffer.vhd:40]
+WARNING: [Synth 8-614] signal 'CLEAR' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/circ_buffer.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'circ_buffer' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/circ_buffer.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'convertMessagetoTime' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertMessagetoTime.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'convertMessagetoTime' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertMessagetoTime.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'convertTimetoMessage' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'convertTimetoMessage' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'findAverage' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findAverage.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'findAverage' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findAverage.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'findMin' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd:42]
+WARNING: [Synth 8-614] signal 'time_2' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd:44]
+WARNING: [Synth 8-614] signal 'time_1' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd:44]
+WARNING: [Synth 8-614] signal 'time_3' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'findMin' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'findMax' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd:42]
+WARNING: [Synth 8-614] signal 'time_2' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd:45]
+WARNING: [Synth 8-614] signal 'time_1' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd:45]
+WARNING: [Synth 8-614] signal 'time_3' is read in the process but is not in the sensitivity list [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'findMax' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'main' (0#1) [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd:42]
+WARNING: [Synth 8-3848] Net blank1 in module/entity main does not have driver. [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/main.vhd:64]
+WARNING: [Synth 8-7129] Port BTNL in module finite_state_machine is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.254 ; gain = 502.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.254 ; gain = 502.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1336.254 ; gain = 502.027
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1336.254 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/constrs_1/imports/ENEL373/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/constrs_1/imports/ENEL373/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/constrs_1/imports/ENEL373/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1442.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1442.281 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'finite_state_machine'
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [P:/Profile/ENEL373/CLK_Divider/CLK_Divider.srcs/sources_1/new/bcd_to_7seg.vhd:18]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                printing |                             0000 |                             0100
+          displayaverage |                             0001 |                             0111
+             displayslow |                             0010 |                             0110
+             displayfast |                             0011 |                             1000
+               warning_3 |                             0100 |                             0000
+               warning_2 |                             0101 |                             0001
+               warning_1 |                             0110 |                             0010
+             error_state |                             0111 |                             0101
+                counting |                             1000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'finite_state_machine'
+WARNING: [Synth 8-327] inferring latch for variable 'previous_state_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/imports/ENEL373/finite_state_machine.vhd:145]
+WARNING: [Synth 8-327] inferring latch for variable 'intermediate_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertMessagetoTime.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'Message_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'digit_4_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'digit_3_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'digit_2_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'digit_1_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/convertTimetoMessage.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'intermediate_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findAverage.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'min_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMin.vhd:48]
+WARNING: [Synth 8-327] inferring latch for variable 'max_reg' [H:/FriGroup13/CLK_Divider.srcs/sources_1/new/findMax.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   5 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 12    
+	   8 Input    8 Bit        Muxes := 1     
+	  23 Input    7 Bit        Muxes := 1     
+	  16 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 2     
+	  34 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 7     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+	   9 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port BTNL in module finite_state_machine is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (intermediate_reg[15]) is unused and will be removed from module findAverage.
+WARNING: [Synth 8-3332] Sequential element (min_reg[15]) is unused and will be removed from module findMin.
+WARNING: [Synth 8-3332] Sequential element (max_reg[15]) is unused and will be removed from module findMax.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     6|
+|2     |CARRY4 |   283|
+|3     |LUT1   |   117|
+|4     |LUT2   |   432|
+|5     |LUT3   |   207|
+|6     |LUT4   |   351|
+|7     |LUT5   |   185|
+|8     |LUT6   |   261|
+|9     |FDCE   |    67|
+|10    |FDRE   |   111|
+|11    |LD     |   197|
+|12    |IBUF   |     7|
+|13    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 1442.281 ; gain = 502.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1442.281 ; gain = 608.055
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1442.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 480 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1442.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 197 instances were transformed.
+  LD => LDCE: 197 instances
+
+Synth Design complete, checksum: 37c5a4df
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1442.281 ; gain = 999.691
+INFO: [Common 17-1381] The checkpoint 'H:/FriGroup13/CLK_Divider.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 17:17:33 2024...
